@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "./components/Navbar/Navbar"
-import tanya from "./assets/tanya.png"
+import tanya from "./assets/tanya.jpg"
 import './App.css';
 
 export default function App() {
@@ -10,11 +10,13 @@ export default function App() {
       <div className="main">
         <div className="main-center">
           <div className="left">
-            <h1>Hi! I am <span className="gradient-text">Tanya</span> Upadhyay</h1>
+            <h1>I'm <span className="gradient-text">Tanya</span> Upadhyay</h1>
             {/* <p>I am a Computer Science student with a knack for building clean, functional, and user-friendly digital experiences.</p> */}
           </div>
           <div className="right">
-            <img src={tanya} height="500"></img>
+            <div className="half-capsule">
+              <img src = {tanya}></img>
+            </div>
           </div>
         </div>
 

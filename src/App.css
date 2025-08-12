@@ -5,7 +5,7 @@
 }
 .main{
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(23, 17, 42), rgb(41, 48, 78));
+    background-image: linear-gradient(to right, rgb(32, 28, 44), rgb(30, 39, 79));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,19 +40,19 @@
     font-weight: 1000;
 }
 .gradient-text {
-  background: linear-gradient(to right, #4facfe, #e96eff); /* blue → pink */
+  background: linear-gradient(to right, #4facfe, #e96eff); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.right{
+.right{margin-top: 3%;
     height:60%;
     width:30%;
     /* background-color: aliceblue; */
     display:flex;
     align-items: center;
     justify-content: center;
-     animation: float 2s ease-in-out infinite;
+     /* animation: float 2s ease-in-out infinite; */
 }
 
 @keyframes float {
@@ -65,4 +65,19 @@
     100% {
         transform: translateY(0);
     }
+}
+
+.half-capsule {
+  width: 400px; /* adjust as needed */
+  height: 500px;
+  border-radius: 10rem 10rem 0 0; /* capsule top, flat bottom */
+  overflow: hidden; /* ensures image doesn't spill outside */
+  box-shadow: 6px 6px 10px rgba(160, 255, 160, 0.31);
+}
+
+.half-capsule img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover; /* keeps image proportions while filling shape */
 }

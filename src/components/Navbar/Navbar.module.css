@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin-top:2%;
+  /* margin-top:2%; */
   width: 100%;
   background: rgba(31, 0, 60, 0);
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) */
@@ -14,9 +14,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  background-color:rgba(255, 255, 255, 0.146) ;
-  border: 0.5px solid rgba(255, 255, 255, 0.378);
+  /* max-width: 1100px; */
+  /* background-color:rgba(255, 255, 255, 0.146) ; */
+  /* border: 0.5px solid rgba(255, 255, 255, 0.378); */
   margin: auto;
   border-radius: 1rem;
   padding: 1rem 2rem;
