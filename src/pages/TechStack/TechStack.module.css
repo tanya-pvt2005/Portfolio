@@ -1,0 +1,265 @@
+/* TechStack.module.css */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    /* background-color: #c78585; */
+    /* background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%); */
+    color: #fff;
+    position: relative;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+    background: linear-gradient(90deg, #ffffff, #dddce3, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:pink ; */
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.glassButton {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glassButton:hover {
+    /* background: rgba(255, 255, 255, 0.15); */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(144, 137, 252, 0.4);
+}
+
+/* Individual category colors */
+.languages {
+    border-color: #ff80b5;
+    color: #ff80b5;
+}
+
+.languages:hover {
+    box-shadow: 0 8px 20px rgba(255, 128, 181, 0.4);
+    background-color: #ff80b5;
+    color: white;
+}
+
+.frontend {
+    border-color: #7f5af0;
+    color: #7f5af0;
+}
+
+.frontend:hover {
+    box-shadow: 0 8px 20px rgba(127, 90, 240, 0.4);
+    background-color: #7f5af0;
+    color: white;
+}
+
+.backend {
+    border-color: #00d084;
+    color: #00d084;
+}
+
+.backend:hover {
+    box-shadow: 0 8px 20px rgba(0, 208, 132, 0.4);
+    background-color: #00d084;
+    color: white;
+}
+
+.database {
+    border-color: #ffba08;
+    color: #ffba08;
+}
+
+.database:hover {
+    box-shadow: 0 8px 20px rgba(255, 186, 8, 0.4);
+    background-color: #ffba08;
+    color: white;
+}
+
+.aiml {
+    border-color: #f72585;
+    color: #f72585;
+}
+
+.aiml:hover {
+    box-shadow: 0 8px 20px rgba(247, 37, 133, 0.4);
+    background-color: #f72585;
+    color: white;
+}
+
+.blockchain {
+    border-color: #3a86ff;
+    color: #3a86ff;
+
+}
+
+.blockchain:hover {
+    box-shadow: 0 8px 20px rgba(58, 134, 255, 0.4);
+    background-color: #3a86ff;
+    color: white;
+}
+
+.cloud {
+    border-color: #ff6d00;
+    color: #ff6d00;
+}
+
+.cloud:hover {
+    box-shadow: 0 8px 20px rgba(255, 109, 0, 0.4);
+    background-color: #ff6d00;
+    color: white;
+}
+
+.info {
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.skillsList {
+    display: grid;
+    /* background-color: #00d084; */
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Flexible columns */
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Each skill box */
+.skillItem {
+    /* background: rgba(255, 255, 255, 0.05); */
+    font-family: "Roboto Condensed";
+    margin-bottom:1%;
+    padding: 1rem 1.5rem;
+    height: 100%;
+    /* text-align: center; */
+
+    align-items: flex-start;
+    /* Align left instead of center */
+
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.761); */
+    width: 100%;
+    /* Full width of its column */
+}
+
+.skillItem:hover {
+    transform: translateY(-4px);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); */
+}
+/* */
+
+
+/* Skill name */
+.name {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Progress bar container */
+.percentageBar {
+    background: rgba(255, 255, 255, 0.15);
+    height: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+/* Filled portion of bar */
+.filledBar {
+    background: linear-gradient(90deg, #a855f7, #6366f1);
+    height: 100%;
+    transition: width 1.2s ease;
+}
+
+/* Skill info text */
+.info {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+    .skillsList {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+    .skillsList {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .skillsList {
+        grid-template-columns: 1fr;
+        /* Single column for very small screens */
+    }
+
+    .percentageBar {
+        height: 8px;
+    }
+
+    .name {
+        font-size: 0.95rem;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+}
