@@ -1,11 +1,11 @@
 import React from 'react'
-
-const ABout = () => {
+import styles from "./About.module.css"
+import me from "../../assets/me.png"
+const About = () => {
   return (
-    <div>
-      ABout
-    </div>
+    <>
+    </>
   )
 }
 
-export default ABout
+export default About

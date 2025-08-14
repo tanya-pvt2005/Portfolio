@@ -14,7 +14,7 @@
 
 /* Logo text */
 .logo a {
-  color: #90c926;
+  color: #6c63ff;
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Roboto Condensed";
@@ -37,9 +37,9 @@
 
 /* Links default style */
 .navLinks ul li a {
-  color: #90c926;
+  color: #9f9af9;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2em;
   font-family: "Roboto Condensed";
   font-weight: 500;
   position: relative;
@@ -54,8 +54,8 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #90c926;
-  box-shadow: 0 0 5px #39ff14, 0 0 5px #90c926;
+ background-color: #6c63ff;
+  /* box-shadow: 0 0 5px #6c63ff, 0 0 5px #6c63ff; */
   transition: width 0.3s ease;
 }
 
@@ -66,7 +66,7 @@
 /* Active link highlight */
 .navLinks ul li .active {
   font-weight: bold;
-  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  text-shadow: 0 0 10px #6c63ff, 0 0 20px #6c63ff;
 }
 
 /* Mobile styles */
@@ -104,7 +104,7 @@
   display: block;
   width: 28px;
   height: 3px;
-  background-color: #90c926;
+  background-color: #6c63ff;
   /* box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14; */
   border-radius: 2px;
   transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
