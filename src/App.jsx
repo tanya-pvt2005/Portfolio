@@ -1,34 +1,30 @@
-import React from 'react';
-import Navbar from "./components/Navbar/Navbar"
-import tanya from "./assets/tanya.jpg"
-import './App.css';
+import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
+import About from "./pages/About/About";
+import Achieve from "./pages/Achieve/Achieve";
+import Contact from "./pages/Contact/Contact";
+import Highlights from "./pages/Highlights/Highlights";
+import Landing from "./pages/Landing/Landing";
+import Projects from "./pages/Projects/Projects";
+import TechStack from "./pages/TechStack/TechStack";
+function App() {
 
-export default function App() {
   return (
     <>
-      <Navbar />
-      <div className="main">
-        <div className="main-center">
-          <div className="left">
-            <h1>I'm <span className="gradient-text">Tanya</span> Upadhyay</h1>
-            {/* <p>I am a Computer Science student with a knack for building clean, functional, and user-friendly digital experiences.</p> */}
-          </div>
-          <div className="right">
-            <div className="half-capsule">
-              <img src = {tanya}></img>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/achievements" element={<Achieve />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/highlights" element={<Highlights />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/techstack" element={<TechStack />} />
+        </Routes>
       
-      {/* <section id="home" className="section">Home Section</section>
-      <section id="about" className="section">About Section</section>
-      <section id="projects" className="section">Projects Section</section>
-      <section id="resume" className="section">Resume Section</section>
-      <section id="contact" className="section">Contact Section</section> */}
     </>
-  );
+  )
 }
+
+export default App
