@@ -1,0 +1,175 @@
+/* ===========================
+   Project Section
+=========================== */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  background: linear-gradient(90deg, #ffffff, #dddce3, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px 0 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.projectsContainer {
+  padding: 2rem 5rem;
+  /* height:600px; */
+  /* background-color: #00758f; */
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   Project Card
+=========================== */
+.projectCard {
+  background: rgba(255, 255, 255, 0.048);
+  border-radius: 0.5rem;
+  padding: 1rem; /* smaller padding */
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0.42); */
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  height:450px;
+  max-width:480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2%;
+  margin: 0 1.5%;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  box-shadow: 0px 8px 25px rgba(225, 219, 222, 0.4);
+}
+
+.projectImage {
+  width: 100%;
+  height: 180px; /* smaller image */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+}
+
+.projectInfo h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  color: #aa83f8;
+}
+
+.projectInfo p {
+  font-family: "Roboto Condensed";
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0.5rem 0 1rem;
+  margin-bottom: 6%;
+}
+
+/* ===========================
+   Tech Stack Badges
+=========================== */
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.techBadge {
+  padding: 6px 10px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  display: inline-block;
+  /* background-color: #ffffff59; */
+  border: 2px solid rgba(255, 255, 255, 0.287);
+  text-transform: capitalize;
+  white-space: nowrap;
+  color:rgba(255, 255, 255, 0.973);
+  transition: transform 0.2s ease;
+}
+
+.techBadge:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* ===========================
+   Links
+=========================== */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  
+}
+
+.links a:first-child {
+    background-color: #9966ff;
+    font-family: "Roboto Condensed";
+  color: white;
+}
+
+.links a:last-child {
+    font-family: "Roboto Condensed";
+
+  border: 1px solid #9966ff;
+  color: #9966ff;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Slider Arrows
+=========================== */
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.757);
+  padding: 1rem;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background:none;
+  color:white;
+  border: 2px solid white;
+}
+
+.next { right: -60px; }
+.prev { left: -60px; }
+
+@media (max-width: 768px) {
+  .next { right: -20px; }
+  .prev { left: -20px; }
+}
