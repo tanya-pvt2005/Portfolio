@@ -4,6 +4,7 @@ import me from "../../assets/me.png"
 const About = () => {
   return (
     <>
+    
     </>
   )
 }

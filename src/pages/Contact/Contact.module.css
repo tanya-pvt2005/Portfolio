@@ -1,7 +1,61 @@
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.boxes{
+  /* background-color: #ccc; */
+  border-radius : 1rem;
+  height:50px;
+  position: absolute;
+  bottom:5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:3px;
+  /* border: 1px solid rgba(255, 255, 255, 0.161); */
+  width:800px;
+}
+.box{
+  height: 80%;
+  width:60px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #6c63ff; */
+  /* border:1px solid rgba(255, 255, 255, 0.062); */
+  cursor: pointer;
+}
+.box a{
+  /* font-size: ; */
+  color:#aaa;
+}
+
+.box:hover{
+ animation: rotateIcon 1s ease;
+}
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }  
+}
+
 .contact {
   padding: 5rem 8%;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   /* background: linear-gradient(180deg, #0d0d0d, #1a1a1a); */
+  height : 80vh;
+  margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -12,12 +66,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
+  
 }
 
 .contact p {
   color: #aaa;
   max-width: 600px;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 1rem auto;
 }
 
 /* ====== Fade + Slide Animation ====== */
@@ -55,7 +110,7 @@
 }
 
 .contactForm {
-  flex: 1;
+  flex: 2.1;
   min-width: 300px;
   /* background: rgba(255, 255, 255, 0.05);  */
   /* backdrop-filter: blur(15px); */
@@ -104,7 +159,7 @@
 .contactInfo {
   flex: 0.5;
   min-width: 250px;
-  background: none;
+  /* background-color: #a46bff; */
   /* backdrop-filter: blur(15px); */
   padding: 2rem;
   border-radius: 0.5rem;
@@ -136,3 +191,20 @@
     text-align: center;
   }
 }
+.profileLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profileLinks a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.profileLinks a:hover {
+  color: #a855f7;
+  transform: translateY(-3px);
+}
+
